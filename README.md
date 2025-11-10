@@ -1,2 +1,2 @@
 # Playlist_Downloader
-Aplicativo para PC e Celular que baixa playlists do youtube
+Aplicativo feito com Flet para PC e Celular que baixa playlists do youtube

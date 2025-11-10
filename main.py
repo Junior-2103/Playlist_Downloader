@@ -1,18 +1,23 @@
 """."""
 
-import kivy
-kivy.require('2.0.0')
+from pytubefix import Playlist, YouTube
+import flet as ft
 
-from kivy.app import App
-from kivy.uix.boxlayout import BoxLayout
 
-class MainScreen(BoxLayout):
-    pass
+class Main(ft.Container):
+    def __init__(self, page: ft.Page):
+        self.page = page
+        self.page.window.always_on_top = True
+        self.page.window.width = 500
+        self.page.window.height = 500
+        self.page.title = "Playlist downloader"
+        self.main()
 
-class MainApp(App):
-    def build(self):
-        return MainScreen()
+    def main(self):
+        self.page.add(ft.Text("Hello World!"))
 
+
+# https://youtube.com/playlist?list=PLf0A4V8_hvaOXgkIeIWBZfLGgjrW8hZz4&si=eXep1MHGyPMCefoi
 
 if __name__ == "__main__":
-    MainApp().run()
+    ft.app(Main)
