@@ -1,9 +1,9 @@
 # pyproject.toml
 [project]
-name = "strict-project"
+name = "playlist-downloader"
 version = "0.1.0"
 dependencies = [
-    "kivy",
+    "flet",
     "pytubefix"
 ]
 
